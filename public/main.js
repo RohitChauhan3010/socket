@@ -12,7 +12,7 @@ const room = urlParams.get("room");
 
 
 
-const socket = io("http://localhost:8800/",{transports:["websocket"]});
+const socket = io("https://chatappp-mtx5.onrender.com/",{transports:["websocket"]});
 
 socket.emit("joinRoom",({username,room}));
 
